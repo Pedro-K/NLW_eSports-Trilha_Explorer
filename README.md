@@ -6,7 +6,7 @@
 
 Projeto contruído do evento Next Level Week da Rocketseat
 
-[Clique aqui para acessar](https://Pedro-K.github.io/NLW_eSports-Trilha_Explorer)
+[Clique aqui para acessar](https://Pedro-K.github.io/NLW-eSports)
 
 ## Tecnologias
 

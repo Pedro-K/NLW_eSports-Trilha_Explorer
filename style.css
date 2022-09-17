@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./assets/bg.jpg');
+    background-color: #121214;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+    color: #fff;
+}
+
+header{
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+section{
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 10px;
+    padding-top: 4px;
+}
+
+section .card{
+    background-color: #2A2634;
+    padding: 24px 32px 32px 32px;
+    border-radius: 8px;
+}
+
+section .card h2 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.47px;
+}
+
+section .card p{
+    color: #A1A1AA;
+    letter-spacing: -0.18px;
+}
+
+section .card ul{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    list-style: none;
+}
+
+section .card ul li{
+    transition: transform .3s;
+}
+
+section .card ul li:hover{
+    transform: scale(1.1);
+}
+
+section .card ul.games-list img{
+    width: 90px;
+    border-radius: 8px;    
+}
+
+section .card ul.channel-list img{
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid #443E54;
+}
+
+section .card ul.games-list img{
+    width: 90px;
+    border-radius: 8px;    
+}
+
+/* Animation */
+
+header div{
+    animation: fromTop .7s .4s backwards;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main section{
+    animation: toTop .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+
+main section:nth-child(2){
+    animation-delay: .2s;
+}
+
+main section:nth-child(3){
+    animation-delay: .4s;
+}
+
+@keyframes toTop{
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

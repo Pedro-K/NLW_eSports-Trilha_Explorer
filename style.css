@@ -14,6 +14,7 @@ body{
     font-family: 'Inter', sans-serif;
     line-height: 160%;
     color: #fff;
+    min-width: 450px;
 }
 
 header{
@@ -41,7 +42,7 @@ header div img {
 }
 
 main{
-    max-width: 580px;
+    max-width: 400px;
     width: 90%;
     margin: 32px auto;
     display: flex;
@@ -51,7 +52,7 @@ main{
 
 section{
     background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
-    border-radius: 10px;
+    border-radius: 12px;
     padding-top: 4px;
 }
 
@@ -75,7 +76,7 @@ section .card p{
 section .card ul{
     display: flex;
     gap: 16px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-top: 24px;
     list-style: none;
 }
@@ -148,4 +149,14 @@ main section:nth-child(3){
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* swiper */
+/* section {
+    overflow: hidden;
+} */
+
+section .card ul:first-child {
+    flex-wrap: nowrap;
+    gap: 0;
 }

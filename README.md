@@ -14,6 +14,5 @@ Projeto contruído do evento Next Level Week da Rocketseat
 - CSS
 - Git e Github
 
-## Contato
 
 pedro.kleinfelder@hotmail.com

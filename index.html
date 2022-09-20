@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
     <title>NLW eSports</title>
 </head>
 
@@ -25,25 +29,46 @@
             <div class="card">
                 <h2>Meus jogos</h2>
                 <p>Os games que eu mais curto jogar!</p>
-                <ul class="games-list">
-                    <li>
-                        <a href="https://www.twitch.tv/directory/game/League%20of%20Legends" target="_blank">
-                            <img src="./assets/img1.png" alt="imagem do jogo league of legends">
-                        </a>
-                    </li>
+                <div class="swiper mySwiper">
+                    <ul class="games-list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="https://www.twitch.tv/directory/game/No%20Man's%20Sky" target="_blank">
+                                <img src="./assets/img1.png" alt="imagem do jogo league of legends">
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="https://www.twitch.tv/directory/game/Apex%20Legends" target="_blank">
-                            <img src="./assets/img2.png" alt="imagem do jogo apex">
-                        </a>
-                    </li>
+                        <li class="swiper-slide">
+                            <a href="https://www.twitch.tv/directory/game/Sea%20of%20Thieves" target="_blank">
+                                <img src="./assets/img2.png" alt="imagem do jogo apex">
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="https://www.twitch.tv/directory/game/World%20of%20Warcraft" target="_blank">
-                            <img src="./assets/img3.png" alt="imagem do jogo world of warcraft">
-                        </a>
-                    </li>
-                </ul>
+                        <li class="swiper-slide">
+                            <a href="https://www.twitch.tv/directory/game/Forza%20Horizon%205" target="_blank">
+                                <img src="./assets/img3.png" alt="imagem do jogo world of warcraft">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V" target="_blank">
+                                <img src="./assets/img4.png" alt="imagem do jogo Grand Theft Auto V">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="https://www.twitch.tv/directory/game/Call%20of%20Duty%3A%20Modern%20Warfare%20II"
+                                target="_blank">
+                                <img src="./assets/img5.png" alt="imagem do jogo Call of Duty: Modern Warfare II">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="https://www.twitch.tv/directory/game/Red%20Dead%20Redemption%202" target="_blank">
+                                <img src="./assets/img6.png" alt="imagem do jogo Red Dead Redemption 2">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -62,8 +87,8 @@
 
                     <li>
                         <a href="https://www.twitch.tv/juliramos" target="_blank">
-                            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e1aa6fed-805b-4c1c-9aa2-a2c89d6824a0-profile_image-150x150.png"
-                                alt="foto do avatar do Juli Ramos">
+                            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/22a5e094-dc5a-4a5c-a326-fc7fe03db50e-profile_image-150x150.png"
+                                alt="foto do avatar do Nofaxu">
                         </a>
                     </li>
 
@@ -110,6 +135,20 @@
             </div>
         </section>
     </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 
 </html>
